@@ -1,20 +1,25 @@
-<hello name="{{ name }}" style="text-align:center;"></hello>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+ 
+         <!-- Brand -->
+         <h1 class="navbar-brand" href="#">DynaView</h1>
+ 
+         <!-- Links -->
+         <ul class="navbar-nav">
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Actions
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Javascript</a>
+                  <a class="dropdown-item" href="#">Css</a>
+                  <a class="dropdown-item" href="#">Bootstrap</a>
+               </div>
+            </li>
+         </ul>
+        <input class="form-control mr-sm-2" type="text" placeholder="Adresse Serveur Dynatrace">
+        <input class="form-control mr-sm-2" type="text" placeholder="Id Environnement">
+      </nav>
 
-<nav class="navbar navbar-light" style="background-color: #e3f2fd; width: 25%;">
-	<ul class="nav flex-column">
-		<li class="nav-item">
-			<a class="nav-link active" [routerLink]="['/Test1']">Active</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
-		</li>
-	</ul>
-</nav>
 <app-test1></app-test1>
 <router-outlet></router-outlet>
