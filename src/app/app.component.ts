@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpRequestService } from './http-request.service';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'DynaTools';
+  address_server : string;
+  idEnv : string;
 }
