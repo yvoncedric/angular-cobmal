@@ -10,4 +10,13 @@ export class AppComponent  {
   name = 'DynaTools';
   address_server : string;
   idEnv : string;
+  response : any;
+  
+  constructor(private httpRequestService :HttpRequestService){
+
+  }
+
+  testConnection(){
+    this.response = this.httpRequestService.get(this.address_server + '/' + this.idEnv);
+  }
 }
