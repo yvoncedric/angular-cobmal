@@ -11,12 +11,15 @@ const httpOptions = {
   )
 };
 
+const token='OuN7mzcDT9-6lHq04l6nC';
+
 @Injectable()
 export class HttpRequestService {
 
   constructor(private http: HttpClient) { }
 
-  get(url:string){
+  getTokenList(url:string){
+    console.log('service / '+url);
     return this.http.get(url, httpOptions);
   }
 }

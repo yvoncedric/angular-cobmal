@@ -3,8 +3,9 @@
 	<!-- Brand -->
 	<h1 class="navbar-brand" href="#">{{name}}</h1>
 
-	<input class="form-control mr-sm-2" type="text" placeholder="Adresse Serveur Dynatrace" [(ngModel)]="address_server">
-        <input class="form-control mr-sm-2" type="text" placeholder="Id Environnement" [(ngModel)]="idEnv">
-        <input class="form-control mr-sm-2" type="button" value="Test" style="width : 50px;">
+	<input id="address_server" class="form-control mr-sm-2" type="text" placeholder="Adresse Serveur Dynatrace" [(ngModel)]="address_server">
+        <input id="idEnv" class="form-control mr-sm-2" type="text" placeholder="Id Environnement" [(ngModel)]="idEnv">
+        <input class="form-control mr-sm-2" type="button" value="Test" style="width : 50px;" (click)="testConnection()">
       </nav>
+
 <!-- <router-outlet></router-outlet> -->
