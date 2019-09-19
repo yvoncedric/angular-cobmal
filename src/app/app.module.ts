@@ -8,8 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpRequestService } from './http-request.service';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,HttpClientModule,
-  //RouterModule.forRoot([
+  imports:      [ BrowserModule, FormsModule,HttpClientModule
   //    { path: 'Test1', component:  },
   //  ]) 
   ],
